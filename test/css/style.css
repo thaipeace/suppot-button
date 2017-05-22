@@ -1,0 +1,101 @@
+.support-button {
+  background-color: purple;
+  position: fixed;
+  width: 50px;
+  height: 250px;
+  right: 0;
+  top: 0;
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+  .support-button.active {
+    display: block; }
+  .support-button .vertical-bar {
+    height: 30px;
+    width: 3px;
+    background-color: #31c673;
+    margin: 0 auto; }
+  .support-button .button-text {
+    padding-left: 20px;
+    transform: rotate(90deg);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+
+.instruction-block {
+  width: 500px;
+  position: fixed;
+  right: -500px;
+  box-shadow: 0 0 10px #888888; }
+  .instruction-block.active {
+    right: 0;
+    animation-name: slide-from-right;
+    animation-duration: 1s; }
+  .instruction-block .header {
+    height: 50px;
+    background: #8e44ad;
+    font-size: 20px;
+    color: #fff;
+    padding: 0; }
+    .instruction-block .header > div {
+      line-height: 50px;
+      cursor: pointer; }
+    .instruction-block .header .x-button {
+      background: purple;
+      color: #2ecc71;
+      padding: 0;
+      text-align: center; }
+      .instruction-block .header .x-button .material-icons {
+        line-height: 50px;
+        font-size: 30px; }
+    .instruction-block .header .search-button {
+      padding: 0;
+      text-align: center; }
+      .instruction-block .header .search-button .material-icons {
+        line-height: 50px;
+        font-size: 30px; }
+    .instruction-block .header .brand {
+      text-align: center;
+      text-transform: uppercase; }
+  .instruction-block .main {
+    padding: 0; }
+    .instruction-block .main .item {
+      padding: 30px 0 30px 15px;
+      border-bottom: 1px solid #ccc;
+      border-offset: 5px; }
+      .instruction-block .main .item .title {
+        padding: 0;
+        cursor: pointer; }
+        .instruction-block .main .item .title .dot {
+          position: relative;
+          top: 26px;
+          left: 10px;
+          background: transparent;
+          height: 10px;
+          width: 10px;
+          border-radius: 5px;
+          border: 1px solid #8e44ad;
+          padding: 0; }
+        .instruction-block .main .item .title h3 {
+          padding: 0 30px;
+          text-transform: uppercase;
+          font-size: 20px; }
+        .instruction-block .main .item .title span {
+          line-height: 55px; }
+      .instruction-block .main .item .content {
+        padding: 0 15px 0 0; }
+      .instruction-block .main .item:last-child {
+        border: none; }
+      .instruction-block .main .item.active .title .dot {
+        background: #8e44ad; }
+      .instruction-block .main .item.active .title h3 {
+        color: #8e44ad; }
+      .instruction-block .main .item.active .title .glyphicon {
+        color: #8e44ad;
+        transform: rotate(180deg); }
+
+@keyframes slide-from-right {
+  from {
+    right: -500px; }
+  to {
+    right: 0; } }
