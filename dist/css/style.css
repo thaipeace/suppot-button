@@ -1,0 +1,24 @@
+.support-button {
+  background-color: purple;
+  position: fixed;
+  width: 50px;
+  height: 250px;
+  right: 0;
+  top: 0;
+  color: #fff;
+  cursor: pointer; }
+  .support-button .vertical-bar {
+    height: 30px;
+    width: 3px;
+    background-color: #31c673;
+    margin: 0 auto; }
+  .support-button .button-text {
+    padding-left: 20px;
+    transform: rotate(90deg);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+
+.glyphicon.glyphicon-one-fine-dot:before {
+  content: "\25cf";
+  font-size: 3em; }
