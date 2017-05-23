@@ -26,7 +26,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('../test/css'));
+        .pipe(gulp.dest('test/css'));
 });
 
 // Concatenate & Minify JS
@@ -36,12 +36,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('../test/js'));
+        .pipe(gulp.dest('test/js'));
 });
 
 gulp.task('template', function() {
     return gulp.src('template/*')
-        .pipe(gulp.dest('../test/template'));
+        .pipe(gulp.dest('test/template'));
 });
 
 // Watch Files For Changes
