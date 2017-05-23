@@ -60,8 +60,7 @@
   .instruction-block .main {
     padding: 0; }
     .instruction-block .main .item {
-      padding: 30px 0 30px 15px;
-      border-bottom: 1px solid #ccc;
+      padding: 0 0 0 15px;
       border-offset: 5px; }
       .instruction-block .main .item .title {
         padding: 0;
@@ -79,9 +78,13 @@
         .instruction-block .main .item .title h3 {
           padding: 0 30px;
           text-transform: uppercase;
-          font-size: 20px; }
+          font-size: 20px;
+          margin-bottom: 0; }
         .instruction-block .main .item .title span {
-          line-height: 55px; }
+          line-height: 42px; }
+      .instruction-block .main .item .content-wrapper {
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid #ccc; }
       .instruction-block .main .item .content {
         padding: 0 15px 0 0; }
       .instruction-block .main .item:last-child {
