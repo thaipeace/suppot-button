@@ -25,9 +25,9 @@
 .instruction-block {
   width: 500px;
   position: fixed;
-  right: -500px;
-  box-shadow: 0 0 10px #888888; }
+  right: -500px; }
   .instruction-block.active {
+    box-shadow: 0 0 10px #888888;
     right: 0;
     animation-name: slide-from-right;
     animation-duration: 1s; }
@@ -58,44 +58,62 @@
       text-align: center;
       text-transform: uppercase; }
   .instruction-block .main {
-    padding: 0; }
+    padding: 30px 0; }
     .instruction-block .main .item {
-      padding: 0 0 0 15px;
-      border-offset: 5px; }
+      padding: 0 0 0 15px; }
       .instruction-block .main .item .title {
         padding: 0;
         cursor: pointer; }
         .instruction-block .main .item .title .dot {
           position: relative;
-          top: 26px;
+          top: 22px;
           left: 10px;
-          background: transparent;
-          height: 10px;
-          width: 10px;
-          border-radius: 5px;
-          border: 1px solid #8e44ad;
-          padding: 0; }
+          background: transparent; }
         .instruction-block .main .item .title h3 {
           padding: 0 30px;
           text-transform: uppercase;
           font-size: 20px;
-          margin-bottom: 0; }
+          margin: 0;
+          line-height: 55px; }
         .instruction-block .main .item .title span {
           line-height: 42px; }
       .instruction-block .main .item .content-wrapper {
-        padding: 0 0 15px 0;
+        padding: 0;
         border-bottom: 1px solid #ccc; }
-      .instruction-block .main .item .content {
-        padding: 0 15px 0 0; }
-      .instruction-block .main .item:last-child {
-        border: none; }
+        .instruction-block .main .item .content-wrapper .content {
+          padding: 0 15px 0 0; }
+          .instruction-block .main .item .content-wrapper .content ul {
+            padding: 0;
+            margin: 0; }
+            .instruction-block .main .item .content-wrapper .content ul li {
+              margin-bottom: 15px;
+              color: #c8cbd4;
+              list-style: none; }
+              .instruction-block .main .item .content-wrapper .content ul li .dot {
+                border-color: #c8cbd4;
+                margin-right: 20px;
+                background: #fff; }
       .instruction-block .main .item.active .title .dot {
         background: #8e44ad; }
       .instruction-block .main .item.active .title h3 {
         color: #8e44ad; }
       .instruction-block .main .item.active .title .glyphicon {
         color: #8e44ad;
-        transform: rotate(180deg); }
+        transform: rotate(180deg);
+        position: relative;
+        left: 5px; }
+      .instruction-block .main .item:last-child .content-wrapper {
+        border: none; }
+      .instruction-block .main .item:first-child .content-wrapper {
+        padding-bottom: 15px; }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  border: 1px solid #8e44ad;
+  padding: 0;
+  display: inline-block; }
 
 @keyframes slide-from-right {
   from {

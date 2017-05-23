@@ -38,10 +38,13 @@
             $('.support-button').addClass('active');
           });
           
-          $('.collapse').on('show.bs.collapse', function(event) {
-            $('.collapse').not(event.target).collapse('hide');
+          $('.instruction-block .collapse').on('show.bs.collapse', function(event) {
+            $('.instruction-block .collapse').not(event.target).collapse('hide');
             $('.instruction-block .item').removeClass('active');
-            $($(this).parent()).addClass('active');
+            console.log(this);
+            $(this).parent().parent().addClass('active');
+            $('.instruction-block .content-wrapper').css('padding-bottom', '0');
+            $(this).parent().css('padding-bottom', '15px');
           });
         }
     };
